@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Cadastro Pessoa</h1>
+    <form action=" RecebeDados.php " method="post" > <!--O "form" serve para "cadastramento" --> <!-- O "method="post"" serve para mudar a url( se tiver senha ele vai "codificar" as informações como senha, e-mail...) -->
+        Nome: <input type="text" name="home" size="50"><br><br>
+        Endereço: <input type="text" name="End" size="60"><br><br>
+        E-mail: <input type="text" name="mail" size="50"><br><br>
+        Hora: <input type="time" name="hrs" size="50"> <!--Não necessário.--><br><br>
+        Senha: <input type="password" name="senha" ><br><br>
+        Cor: <input type="color" name="Cor" ><br><br>
+        Arquivo: <input type="file" name="arquivo" ><br><br>
+        Satisfação: <input type="range" name="stisfacao" ><br><br>
+        Data: <input type="date" name="data" ><br><br>
+        Nascimento: <input type="datetime-local" name="born" ><br><br><br>
+        Cursos: <br>
+        Ti: <input type="radio" name=" curso " velue="Ti"> <br> <!-- O "value" serve para selecionar somente uma opção. -->
+        Ta: <input type="radio" name=" curso " value="Ta"> <br> 
+        Tl: <input type="radio" name=" curso " value="Tl"> <br>
+        <br><br>
+        Diciplinas: 
+        <input type="checkbox" name="LV1" id=""> LV1 <br>
+        <input type="checkbox" name="MC" id=""> MC <br>
+        <input type="checkbox" name="RD" id=""> Redes <br>
+        <input type="checkbox" name="DD" id=""> Dirito Digital <br>
+        <input type="checkbox" name="MPE" id=""> Metodologia de pesquisa e ensino <br>
+        <input type="checkbox" name="POO" id=""> POO <br>
+
+        <input type="button" value="do = fish"><br><br><br>
+
+        Estado: <br>
+        <select name="estado">
+            <option value="DF">DF</option>
+            <option value="MG">MG</option>
+            <option value="GO">GO</option>
+            <option value="SP">SP</option>
+            <option value="RJ">RJ</option>
+        </select>
+        <br><br><br>
+        Observações: <br>
+        <textarea name="observacoes" cols="100" rows="4"></textarea> <br> <!-- "cols" colunas . "rows" linhas . -->
+        <input type="submit" value="cadastrar">
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
